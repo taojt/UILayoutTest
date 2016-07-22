@@ -1,26 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="horizontal"-->
+    <!--tools:context="com.example.taojt.uilayouttest.MainActivity">-->
+
+    <!--<EditText-->
+
+        <!--android:id="@+id/edit_text"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textColor="#0000EE"-->
+        <!--android:hint="Please Input..."/>-->
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textColor="#00FF00"-->
+        <!--android:text="Send"/>-->
+<!--</LinearLayout>-->
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context="com.example.taojt.uilayouttest.MainActivity">
+    android:stretchColumns="1">
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account:"
+            android:textSize="24sp" />
+        <EditText
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textSize="24sp"/>
+        <EditText
 
-    <EditText
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/send"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_span="2"
+            android:textSize="28sp"
+            />
+    </TableRow>
 
-        android:id="@+id/edit_text"
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textColor="#0000EE"
-        android:hint="Please Input..."/>
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textColor="#00FF00"
-        android:text="Send"/>
 
-</LinearLayout>
+</TableLayout>
